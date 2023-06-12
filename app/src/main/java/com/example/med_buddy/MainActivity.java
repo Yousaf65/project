@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
 
+
         });
         signup1.setOnClickListener(new View.OnClickListener() {
             @Override

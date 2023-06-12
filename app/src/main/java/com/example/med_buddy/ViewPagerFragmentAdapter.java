@@ -7,7 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class ViewPagerFragmentAdapter extends FragmentStateAdapter {
 
-    private String[] titles=new String[]{"Reminder","Appointments","Reports"};
+    private String[] titles=new String[]{"Reminder","Appointment","Setting"};
     public ViewPagerFragmentAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
@@ -18,9 +18,9 @@ public class ViewPagerFragmentAdapter extends FragmentStateAdapter {
         switch (position)
         {
             case 0:
-                return new reminders();
+                return new reminder();
 
-            case 1:
+                case 1:
                 return new appointment();
 
             case 2:

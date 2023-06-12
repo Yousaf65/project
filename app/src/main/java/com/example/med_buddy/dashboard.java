@@ -30,5 +30,6 @@ public class dashboard extends AppCompatActivity {
 
         new TabLayoutMediator(tabLayout,viewPager2,((tab, position) -> tab.setText(titles[position]))).attach();
 
+
     }
 }

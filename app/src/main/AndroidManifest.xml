@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
 
 
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,24 +23,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Med_Buddy"
         tools:targetApi="31">
-        <receiver
-            android:name=".ReminderBroadcastReceiver"
-            android:exported="false" />
-        <receiver
-            android:name=".AlarmReceiver"
-            android:exported="false" />
-        <activity
-            android:name=".list_item_medicine"
-            android:exported="false" />
-        <activity
-            android:name=".add_medicines"
-            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD_GyNm4vvLeXoC4uSPvkKRROXjA1B12tI" />
+
         <activity
             android:name=".dashboard"
             android:exported="false" />
+        <activity android:name=".NotificationMessage"
+            android:exported="true"/>
+
         <activity
             android:name=".signup"
             android:exported="false" />
+
         <activity
             android:name=".login"
             android:exported="false" />
@@ -41,10 +45,31 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+
         </activity>
+        <activity android:name=".reminder"
+            android:exported="true"/>
+        <receiver android:name=".AlarmBrodcast"
+            android:exported="true"/>
+        <activity android:name=".ReminderActivity"
+            android:exported="true"/>
+        <activity android:name=".AddActivity"
+            android:exported="true"/>
+    <activity android:name=".UpdateActivity"
+          android:exported="true"/>
+        <activity android:name=".appointment"
+            android:exported="true"/>
+        <activity android:name=".MapsActivity"
+            android:exported="true"/>
+        <activity android:name=".notes"
+            android:exported="true"/>
+
+
+
+
     </application>
 
 </manifest>

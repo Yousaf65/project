@@ -7,11 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\Lenovo Thinkpad T460\.android\avd\Nexus_One_API_29.avd" />
+            <value value="C:\Users\Lenovo Thinkpad T460\.android\avd\5.4_FWVGA_API_29.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2023-06-01T18:38:17.507649Z" />
+    <timeTargetWasSelectedWithDropDown value="2023-06-06T13:24:24.105638700Z" />
   </component>
 </project>
